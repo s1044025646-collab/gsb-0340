@@ -1,0 +1,9 @@
+{
+  "initialMatrix": [[4, 1], [1, 4]],
+  "rowTargets": [3, 7],
+  "colTargets": [4, 6],
+  "tolerance": 1e-10,
+  "maxIterations": 100,
+  "residualMode": "absolute",
+  "note": "非均匀初表：相同边际下内部结构与全一表不同"
+}

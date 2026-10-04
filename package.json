@@ -1,0 +1,29 @@
+{
+  "name": "a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-sqlite --import tsx/esm --test test/ipf.test.ts",
+    "demo": "node --experimental-sqlite --import tsx/esm src/demo.ts",
+    "start": "node --experimental-sqlite dist/src/cli.js serve",
+    "dev": "node --experimental-sqlite --import tsx/esm src/cli.ts serve",
+    "cli": "node --experimental-sqlite --import tsx/esm src/cli.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "bin": {
+    "ipf": "dist/src/cli.js"
+  }
+}
