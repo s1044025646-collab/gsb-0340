@@ -1,0 +1,18 @@
+{
+  "name": "ipf-balancer",
+  "version": "1.0.0",
+  "description": "列联表边际配平（IPF）后端：API + CLI",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test test/*.test.cjs",
+    "start": "npm run build && node dist/server.js",
+    "demo": "npm run build && node dist/cli.js demo"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
